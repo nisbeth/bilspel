@@ -1,0 +1,60 @@
+/* 
+    Document   : contact
+    Created on : 2011-sep-27, 08:49:59
+    Author     : Emil
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    background: #fff;
+}
+
+#contactform {
+    margin-top: 3px;
+    color: #000;
+    font-family: helvetica neue, helvetica, sans-serif, baskerville;
+}
+
+#contactform p {
+    margin: 4px auto;
+    padding-left: 2px;
+}
+
+#contactform input {
+    width: 350px;
+    height: 25px;
+}
+
+#contactform textarea {
+    width: 350px;
+    height: 150px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.sub {
+    font-size: 14px;
+}
+
+#submit{
+    background: none;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin-left: 2px;
+    padding: 5px;
+}
+
+#thank {
+    text-align: center;
+    padding-top: 100px;
+}

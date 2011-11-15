@@ -1,0 +1,43 @@
+/* 
+    Document   : all-ie-only
+    Created on : 2011-nov-14, 10:19:05
+    Author     : Emil
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    background-color: #e4e4e4;
+}
+
+img {
+    border: none;
+}
+
+.ie {
+    margin: 40px;
+}
+
+.ie p {
+    margin-left: 20px;
+    font-family: monospace, sans-serif;
+}
+
+.ie_log {
+    position: relative;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    border: none;
+}
