@@ -49,12 +49,14 @@ include 'inc/head.php';
 
 include 'inc/functions.php';
 
+
+
+
 // om formuläret för kommentar är ifyllt skapas det i db
 if (isset($_POST['comment'])) {
     $commentName = $_POST ['name'];
     $commentText = $_POST ['comment'];
-
-
+    
 //
     if ($commentName == "" || $commentText == "") {
         $commentString = "<p style='color: red; font-weight: bold;'>All fields are required<p>";
@@ -65,6 +67,8 @@ if (isset($_POST['comment'])) {
     }
 }
 
+//$commentName =~ s/</&lt;/g;
+//$commentText =~ s/</&lt;/g;
 // visa info/felsträng om man gjort ett inlägg
 echo $commentString;
 // ansluter till db

@@ -40,17 +40,18 @@ function insertComment($username, $text) {
     connectDb ();
 
 //Escapa alla strängar för säkerhetsskull
-    $username = mysql_real_escape_string($username);
-    $text = mysql_real_escape_string($text);
+   include_once 'safestring.php';
+   $username = safeString($username);
+   $text = safeString($text);
+  // $username = mysql_real_escape_string($username);
+  //$ $text = mysql_real_escape_string($text);
+    
     // tar ut dagens datum och tid
     $date = getCurrentDate();
 //Lägg in comment i databasen
     mysql_query("INSERT INTO comment (`username`, `text`, `date`) VALUES ('$username' , '$text', '$date')")
     or die("Something went wrong with the insert query" . mysql_error());
 }
-
-
-
 
 ?>
 

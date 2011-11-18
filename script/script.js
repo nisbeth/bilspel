@@ -21,12 +21,24 @@ $(document).ready(function(){
     $("#contact_j").click(function(){
         $("#jonas").fadeToggle("100");
     });
+    
 });
 
 
 $(document).ready(function (){
     $('#content').fadeIn('1000');
 });
+
+function open_tw()
+{
+window.open("http://www.twitter.com/ettjavlabilspel")
+}
+
+function open_fb()
+{
+window.open("http://www.facebook.com/pages/Ett-j%C3%A4vla-bilspel/210757385658796?sk=wall")
+}
+
 
  /*function checkForm(){
     var gname;
@@ -45,12 +57,6 @@ if(trim(gname.value) == ''){
     gname.focus();
     // return false;
 } 
-
-
-
-
-
-
 
 
 
@@ -102,6 +108,18 @@ $(document).ready(function (){
 }); */
 
 
-function displayDate() {
-    document.getElementById("#date").innerHTML=Date();
-}
+$(document).ready(function(){
+  $('#twBtn').toggle(function(){
+      $('.tw').animate({opacity: 1, left: '+=40', width: 'fadeIn'}
+       , 500, function(){
+          
+      });
+   },function(){
+      $('.tw').animate({opacity: 1, left: '-=40', width: 'fadeOut'}
+       , 500, function(){
+          
+    });
+  });
+});
+
+

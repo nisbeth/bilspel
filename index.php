@@ -45,6 +45,7 @@ $title = "ettjavlabilspel";
 
 
     <div id="main">
+           
         <table>
             <tr>
                 <td>
@@ -89,7 +90,8 @@ $title = "ettjavlabilspel";
                         
           </div>
         <div id="scores">
-        <!-- latest scores -->
+           <button id="button">TRYCK</button> 
+            <ul id="list"></ul>
 
         <p>HIGHSCORES</p>
 

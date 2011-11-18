@@ -54,9 +54,11 @@
         <!-- javascripts -->
         <script type="text/javascript" src="script/lytebox.js"></script>
         <script type="text/javascript" src="script/script.js"></script>
+        
+        <script type="text/javascript" src="highscorescript.js"></script>
         <![endif]-->
-           
-
+         
+ 
     </head>
     <body>
 
@@ -82,4 +84,14 @@
 
          <!-- main div wrapper -->
          <div id="wrapper">
+             
+             <div id="social">
+                 <ul>
+                     <li><img id="twBtn" src="./images/connect.png" alt="tweet" /></li>
+                 </ul>
+                 
+             <p onclick="open_tw()"> <img class="tw" src="./images/twitter.png" alt="tweet"/></p>
+             <p onclick="open_fb()"> <img class="tw" src="./images/fb_.png" alt="fb"/></p>
+                 
+             </div>
 

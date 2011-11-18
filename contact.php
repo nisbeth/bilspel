@@ -61,10 +61,9 @@ include 'inc/head.php';
                 <h2 class="click">Management</h2>
                 <ul id="jonas">
                     <li style="font-weight: bold;">Jonas Ryberg</li>
-                    <li>email@retrorace.com</li>
-                    <li>phone +46 730 000 123</li>
-                    <li>website</li>
-                    <li>facebook</li>
+                    <li><a href="mailto: jorgox@hotmail.com">jorgox@hotmail.com</a></li>
+                    <li>phone +46 70 330 85 82</li>
+                    <li><a href="http://facebook.com/kjryberg">facebook.com/kjryberg</a></li>
                     <li><a href="https://twitter.com/MrJonasRyberg" class="twitter-follow-button" data-show-count="false">Follow @MrJonasRydberg</a>
                     <script src="//platform.twitter.com/widgets.js" type="text/javascript"></script></li>
                 </ul>
@@ -107,10 +106,9 @@ include 'inc/head.php';
                
                 <ul id="emil">
                     <li style="font-weight: bold;">Emil Larsén</li>
-                    <li>info@emilo.se</li>
+                    <li><a href="mailto: info@emilo.se">info@emilo.se</a></li>
                     <li>phone +46763-174923</li>
-                    <li><a href="http://emilo.se/">emilo.se</a></li>
-                    <li></li>
+                    <li><a href="http://emilo.se/">http://emilo.se</a></li>
                     <li><a href="https://twitter.com/nisbethh" class="twitter-follow-button" data-show-count="false">Follow @nisbethh</a>
                     <script src="//platform.twitter.com/widgets.js" type="text/javascript"></script></li>
                 </ul>

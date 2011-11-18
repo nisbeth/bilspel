@@ -344,6 +344,19 @@ body {
     padding-bottom: 4px;
 }
 
+.margin ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.margin ul li a:hover {
+    text-decoration: none;
+    color: #969696;
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+}
+
 .portrait {
     width: 140px;
     height: 140px;
@@ -498,4 +511,31 @@ body {
 #shar {
    text-align: left;
    margin: 15px 0px 25px 60px;
+}
+
+#social {
+    width: 100px;
+    height: 180px;
+    
+    position: fixed;
+    top: 140px;
+    right: 72px;
+}
+
+#social ul li {
+    margin-left: 39px;
+}
+
+#twBtn {
+    cursor: pointer;
+    z-index: -1;
+    opacity: 1;
+}
+
+.tw {
+    margin-top: 5px;
+    z-index: -1;
+    opacity: 0;
+    position: relative;
+    cursor: pointer;
 }
