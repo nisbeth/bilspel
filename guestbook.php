@@ -23,10 +23,11 @@ include 'inc/head.php';
              <div id="download">
                         <ul>
                             <li><a href="#"><img class="appmarket" src="./images/app_store.png" alt="appstore"/></a></li>
-                            <li><a href="#"><img class="appmarket" src="./images/market_2.png" alt="market"/></a></li>
+                            <li><a href="https://market.android.com/details?id=se.ettjavlabilspel"><img class="appmarket" src="./images/market_2.png" alt="market"/></a></li>
                             <li><a href="trailer.html" rel="lyteframe" title=''
                                    rev="width: 810px; height: 555px; scrolling: no; border: none;">
                                    <img id="trailer" src="./images/copy.png" alt="market"/></a></li>
+                                   <li><a href="http://vimeo.com/32883019"><img id="vimeo" src="./images/vimeo.png"/></a></li>
                         </ul>
                     </div>
 
@@ -114,8 +115,9 @@ foreach ($commentRows as $index => $row) {
                 <tr>
                     <td>
                     <?php echo $row['username'] ?>
+                    <br />
+                    <?php echo nl2br($row['text']); ?>
                     
-                    <?php echo $row['date'] ?>
                     </td>
                     </tr>
                     <br />
@@ -123,7 +125,8 @@ foreach ($commentRows as $index => $row) {
                     
                     <tr>
                     <td colspan="2">
-                    <?php echo nl2br($row['text']); ?>
+                    
+                        <?php echo $row['date'] ?>
 
                         <hr>
 

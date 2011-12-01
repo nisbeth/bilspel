@@ -1,9 +1,12 @@
 
+/*  Twitter application CSS
+
+    Same case as my mail() css, and here ive used some hmtl5tags and CSS3 transitions */
 
 article {
         padding-bottom: 15px;
 	color: #000;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid #e4e4e4;
 	overflow: hidden;
 	float: left;
         width: 385px;

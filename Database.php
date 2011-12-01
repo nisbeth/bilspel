@@ -13,6 +13,8 @@ class Database{
 
    public function  __construct($username = NULL, $password = NULL, $score = NULL) {
 
+       // escape
+       
         $this->mConnection = new Connection();
         if(isset($username))
             $this->mUsername = mysql_real_escape_string($username);
@@ -24,11 +26,15 @@ class Database{
         $this->mSuccess = TRUE;
    }
 
+   // saves a new user in dB
+   
    public function saveUser(){
        $query = "INSERT INTO highscores (username, password, highscore) VALUES ( '".$this->mUsername."' , '".$this->mPassword."' , '".$this->mNewScore."')";
        $this->mConnection->runSqlQuery($query);
    }
 
+   // save highscore
+   
    public function saveScore(){
        $query = "SELECT highscore FROM highscores WHERE username = '" . $this->mUsername."'";
        $result = $this->mConnection->runSqlQueryWithResult($query);
@@ -43,6 +49,8 @@ class Database{
            $this->mConnection->runSqlQuery($query2);
        }
    }
+   
+   // if user exist, select username and updates score.
 
    public function userExist(){
        $query = "SELECT username, highscore FROM highscores WHERE username = '" . $this->mUsername . "'";
@@ -63,6 +71,8 @@ class Database{
        return $this->mSuccess;
    }
 
+   
+   // updates the score if its a personal best.
 
    public function getAll(){
 

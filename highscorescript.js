@@ -1,3 +1,4 @@
+// jQuery get top 10 highscoore.
 $(document).ready(function(){
 
     $("#button").click(function(){
@@ -18,9 +19,9 @@ $(document).ready(function(){
 function score(){
     $("#list").empty();
 
-    console.log(start +" - "+ end)
+    console.log(start +" - "+ end);
 
-    $.getJSON("http://ettjavlabilspel.com/get_score.php?startlimit=0&endlimit=10"+start+"&endlimit="+end, function (data){
+    $.getJSON("http://ettjavlabilspel.com/get_score.php?startlimit=0&endlimit=10", function(data){
         $.each(data, function(i, item) {
             $('#list').append(
                 $('<li></li>').html(item.username + " - " + item.highscore)
@@ -29,3 +30,5 @@ function score(){
     });
 
 }
+
+

@@ -3,21 +3,21 @@
 //echo $_SERVER['HTTP_USER_AGENT'];
 
 
-// metod som hämtar ut datum och tid på svenska
+// timestamp for comments
      function getCurrentDate(){
      return date("Y-m-d H:i");
 }
 
-// metod som skriver ut angivet objekt för debug syfte
+// prints selected object for debug.
     function printAll($object) {
     echo "<pre>";
     print_r($object);
     echo "</pre>";
 }
 
-//Anslut till databas med förväntade standard parameter.
-       function connectDb($host = "emilo.se.mysql", $user = "emilo_se", $password = "ggsxEvbi", $db = "emilo_se") {
-       //function connectDb($host = "localhost", $user = "root", $password = "root", $db = "bildgalleri") {
+//connect to db with standard parameters.
+       
+       function connectDb($host = "localhost", $user = "root", $password = "root", $db = "bildgalleri") {
 
 //Connect to database
     mysql_connect($host, $user, $password)
@@ -27,28 +27,37 @@
     mysql_select_db($db)
     or die("Vi kunde inte hitta databasen: " . mysql_error());
 
-// Spara ner i global variabel, att vi är anslutna
+// save connection in global varible.
     global $isConnected;
     $isConnected = true;
 }
 
-// lägger in en comment med angivet namn och text
+// post comment with "name" and "text"
 function insertComment($username, $text) {
-   //  om vi inte är anslutna, så ansluter vi
+   //  if were not connected, connect.
     global $isConnected;
     if (isset($isConnected) == false)
     connectDb ();
 
-//Escapa alla strängar för säkerhetsskull
-   include_once 'safestring.php';
+//Escape all strings and use the strip_tags() to be more safe
+    
+   $safe_strings = TRUE;
+
+   function safeString($string){
+    $string = mysql_real_escape_string(strip_tags($string));
+    return $string;
+   }
+   
    $username = safeString($username);
    $text = safeString($text);
-  // $username = mysql_real_escape_string($username);
+  
+//$username = mysql_real_escape_string($username);
   //$ $text = mysql_real_escape_string($text);
     
-    // tar ut dagens datum och tid
+// date and time
     $date = getCurrentDate();
-//Lägg in comment i databasen
+    
+//Inserts a comment dB. 
     mysql_query("INSERT INTO comment (`username`, `text`, `date`) VALUES ('$username' , '$text', '$date')")
     or die("Something went wrong with the insert query" . mysql_error());
 }

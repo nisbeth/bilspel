@@ -11,6 +11,11 @@
    Syntax recommendation http://www.w3.org/TR/REC-CSS2/
 */
 
+
+/* NO IE VERSION ATM */
+/* Currently just LINK'S to better browser download.'*/
+
+
 root { 
     display: block;
 }

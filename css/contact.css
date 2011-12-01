@@ -11,6 +11,8 @@
    Syntax recommendation http://www.w3.org/TR/REC-CSS2/
 */
 
+/* I wanted to do an seperete CSS for my php mail() form, to not confuse. */
+
 root { 
     display: block;
 }

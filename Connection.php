@@ -3,17 +3,17 @@ require_once 'config.php';
 class Connection{
     private $link;
 
-    //Öppnar databasen om det blir new
+    //√ñppnar databasen om det blir new
     public function __construct(){
         $this->openDB();
     }
 
-//    //Stänger databasen när classen slutas användas
+//    //St√§nger databasen n√§r classen slutas anv√§ndas
 //    public function  __destruct() {
 //        $this->closeDB();
 //        }
 
-    // Kopplar upp till databasen
+    // connect to dB();
     private function openDB(){
     $this->link=mysql_connect(MYSQL_SERVER, MYSQL_USERNAME, MYSQL_PASSWORD)
             or die('Kunde inte ansluta till mysql servern '.mysql_error());
@@ -24,7 +24,7 @@ class Connection{
     return $this->link;
     }
 
-//    // Stänger databasen
+//    // St√§nger databasen
 //    private function closeDB(){
 //    mysql_close($this->link)
 //            or die(mysql_error());

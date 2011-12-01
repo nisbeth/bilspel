@@ -2,6 +2,9 @@
 <html>
     <head>
         <?php
+        
+        // redirect user to the mobile version "http://mobile.ettjavlabilspel.com"
+        
         $iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
         $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
         $palmpre = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
@@ -27,21 +30,18 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
         <!-- favicon -->
-        <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="./images/favicon_2.ico" type="image/x-icon" />
 
         <!-- css -->
         <link href="css/reset.css" type="text/css" rel="stylesheet" title="default" media="screen" />
+        <link href="css/tooltips.css" type="text/css" rel="stylesheet"/>
         <link href="css/lytebox.css" type="text/css" rel="stylesheet" title="default" media="screen" />
         <link href="css/style.css" type="text/css" rel="stylesheet" title="default" media="screen and (min-width: 481px)" />
         <link href="css/screen.css" type="text/css" rel="stylesheet" title="default" media="screen and (min-width: 481px)" />
 
-
-        <!-- typeface -->
-        <script type="text/javascript" src="script/typeface.js"></script>
-        <script src="akaDylan.typeface.js"></script>
-
         <!-- jQuery -->
-        <script type="text/javascript" src="script/jquery.min.js" ></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        <script type="text/javascript" src="script/tooltips.js"></script>
         <script src="script/jquery.tmpl.js" type="text/javascript"></script>
 
         <!-- script twitter widget -->
@@ -55,14 +55,20 @@
         <script type="text/javascript" src="script/lytebox.js"></script>
         <script type="text/javascript" src="script/script.js"></script>
         
+        <script type="text/javascript" src="script/tooltips.js"></script>
         <script type="text/javascript" src="highscorescript.js"></script>
         <![endif]-->
          
- 
-    </head>
-    <body>
+        <!-- tooltip function, i liked it to be in the inc/head. -->
+        <script>
+		$(function() {
+			$("#scores a[title]").tooltips();
+		});
+	</script>
+</head>
 
-        
+<body>
+    
 
         <!--[if IE]>
         <div class="ie">
@@ -84,14 +90,14 @@
 
          <!-- main div wrapper -->
          <div id="wrapper">
-             
-             <div id="social">
+           
+             <!-- hidden animate, not done though, since its icluded in every page, its in the 'inc/head'.
+             <div id="social" style="border: 1px solid black;">
                  <ul>
                      <li><img id="twBtn" src="./images/connect.png" alt="tweet" /></li>
                  </ul>
                  
-             <p onclick="open_tw()"> <img class="tw" src="./images/twitter.png" alt="tweet"/></p>
+             <p style="margin-top: 50px;"onclick="open_tw()"> <img class="tw" src="./images/twitter.png" alt="tweet"/></p>
              <p onclick="open_fb()"> <img class="tw" src="./images/fb_.png" alt="fb"/></p>
                  
-             </div>
-
+             </div> -->

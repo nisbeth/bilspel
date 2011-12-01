@@ -25,10 +25,11 @@ $title = "ettjavlabilspel";
              <div id="download">
                         <ul>
                             <li><a href="#"><img class="appmarket" src="./images/app_store.png" alt="appstore"/></a></li>
-                            <li><a href="#"><img class="appmarket" src="./images/market_2.png" alt="market"/></a></li>
+                            <li><a href="https://market.android.com/details?id=se.ettjavlabilspel"><img class="appmarket" src="./images/market_2.png" alt="market"/></a></li>
                             <li><a href="trailer.html" rel="lyteframe" title=''
                                    rev="width: 810px; height: 555px; scrolling: no; border: none;">
                                     <img id="trailer" src="./images/copy.png" alt="market"/></a></li>
+                            <li><a href="http://vimeo.com/32883019"><img id="vimeo" src="./images/vimeo.png"/></a></li>        
                         </ul>
                     </div>
       
@@ -54,7 +55,7 @@ $title = "ettjavlabilspel";
                         <h1>RETROLIKE</h1>
                         <h1>CARGAME</h1>
 
-                        <p>Go pro?! Available at appstore & market.</p>
+                        <p>Android-vers now on Market! Appstore any day now..</p>
 
                     </div>
 
@@ -64,7 +65,7 @@ $title = "ettjavlabilspel";
                 <td>
 
                     <div class="square" id="topright">
-                        <h3>ettjavlabilspel</h3>
+                        <h2>ettjavlabilspel</h2>
 
                         <p>We thought it would be fun to make a game that go way back,
                             not like a billion years, but let's say 25 years. Not because of lack of skill? :)
@@ -90,10 +91,22 @@ $title = "ettjavlabilspel";
                         
           </div>
         <div id="scores">
-           <button id="button">TRYCK</button> 
-            <ul id="list"></ul>
+            
+           
+            
+            <h2>/top10</h2> 
+             <div style="float: right; padding: 10px;">
+		<p style="font-size: 12px; margin-left: 2px;"><a href="#" title="only your best score <br /> will appear on /top10">info</a></p>
+                </div>
+           <button id="button">reFresh Rankings</button> 
+           <div class="clear"></div>
+            <ul id="list">
+               
+            </ul>
+           
+         
 
-        <p>HIGHSCORES</p>
+        
 
 
         </div>
@@ -104,7 +117,7 @@ $title = "ettjavlabilspel";
     <!--<p>follow on twitter or join us facebook.</p>-->
                 <li><a href="http://twitter.com/#!/ettjavlabilspel"><img class="twitter" src="./images/twitter_in.png" alt="twitter" /></a></li>
                 <li><a href="http://www.facebook.com/pages/Ett-j%C3%A4vla-bilspel/210757385658796"><img class="twitter" src="./images/facebook_in.png" alt="twitter" /></a></li>
-                <li><a href="http://www.youtube.com/watch?v=SytbW-7_u9E"><img class="twitter" src="./images/youtube_in.png" alt="twitter" /></a></li>
+                <li><a href="http://www.youtube.com/watch?v=nuwGo6ZGVv0&feature=youtu.be"><img class="twitter" src="./images/youtube_in.png" alt="twitter" /></a></li>
             </ul>
         </div>
         <p id="foot">ettjävlabilspel - 2011</p>
@@ -125,3 +138,6 @@ $title = "ettjavlabilspel";
 <?
 include 'inc/foot.php';
 ?>
+
+
+<!-- I ❤  -->

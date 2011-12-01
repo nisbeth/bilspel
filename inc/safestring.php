@@ -1,11 +1,6 @@
 <?php
 
-$safe_strings = TRUE;
 
-function safeString($string){
-    $string = mysql_real_escape_string(strip_tags($string));
-return $string;
-}
 
 ?>
 

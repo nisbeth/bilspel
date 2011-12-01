@@ -9,5 +9,4 @@
     $data = new Database($username, $password, $score);
 
     echo $data->getAll();
-
 ?>

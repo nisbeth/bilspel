@@ -1,5 +1,5 @@
 <?
-$title = "Retrorace";
+$title = "About";
 
 include 'inc/head.php';
 ?>
@@ -23,10 +23,11 @@ include 'inc/head.php';
              <div id="download">
                         <ul>
                             <li><a href="#"><img class="appmarket" src="./images/app_store.png" alt="appstore"/></a></li>
-                            <li><a href="#"><img class="appmarket" src="./images/market_2.png" alt="market"/></a></li>
+                            <li><a href="https://market.android.com/details?id=se.ettjavlabilspel"><img class="appmarket" src="./images/market_2.png" alt="market"/></a></li>
                             <li><a href="trailer.html" rel="lyteframe" title=''
                                    rev="width: 810px; height: 555px; scrolling: no; border: none;">
                                     <img id="trailer" src="./images/copy.png" alt="market"/></a></li>
+                                    <li><a href="http://vimeo.com/32883019"><img id="vimeo" src="./images/vimeo.png"/></a></li>
                         </ul>
                     </div>
 
@@ -46,7 +47,7 @@ include 'inc/head.php';
         <div id="aboutcontent">
             <div id="rules">
                 
-                <h2>About the game, "ettjavlabilspel".</h2>
+                <h2>About the game "ettjavlabilspel".</h2>
 
              <p>Welcome to the official site of ”Ett jävla bilspel”, translated to english it goes something like ”A fucking cargame”.
                 Born out of the minds of four university students, “Ett jävla bilspel” is a racing game for Android and iOS.
@@ -61,23 +62,48 @@ include 'inc/head.php';
                 But the further you drive, the faster it’ll go, and the difficulty will increase.
                 Since the road never ends, the one who can survive the hard life on the road the longest gets the most points.
                 Top scores from all over the world are shown on this site. Try getting there.
-                On your way to the highest score around, don’t forget to pick up powerups along the dangerous highway. Why not run over a speedboost to go faster? Or pick up a spraycan to swap your vehicles colors?
+                On your way to the highest score around, don’t forget to pick up powerups along the dangerous highway. Why not run over a speedboost to go faster? Or pick up some alcohol, but don't drink and drive!
              </p>
 
              <br />
              
              <p style="font-size: 18px;">screenshoots</p>
-             <div id="screenshots">
+             <div class="screenshots">
 
                  <ul>
-                     <li><a href="./images/screenshot.jpg" rel="lytebox[vacation]" title="in the beginning">
-                     <img src="./images/screen_s_thumb.jpg" alt="road" width="145" height="200"/></a></li>
-                     <li><a href="./images/town.jpg" rel="lytebox[vacation]" title="in the beginning">
-                     <img src="./images/town_thumb.jpg" alt="road" width="145" height="200"/></a></li>
+                     <li><a href="./images/screenshot.jpg" rel="lytebox[vacation]" title="{ title }">
+                     <img src="./images/screen_s_thumb.jpg" alt="road" width="140" height="200"/></a></li>
+                     <li><a href="./images/cars.png" rel="lytebox[vacation]" title="Start!">
+                     <img src="./images/cars_thumb.png" alt="cars" width="140" height="200"/></a></li>
+                     <li><a href="./images/dessert.png" rel="lytebox[vacation]" title="dessert map">
+                     <img src="./images/dessert_thumb.png" alt="road" width="140" height="200"/></a></li>
+                     <li><a href="./images/menu.png" rel="lytebox[vacation]" title="menu">
+                     <img src="./images/menu_thumb.png" alt="road" width="140" height="200"/></a></li>
+                     <li><a href="./images/tunnel.png" rel="lytebox[vacation]" title="cars">
+                     <img src="./images/tunnel_thumb.png" alt="road" width="140" height="200"/></a></li>
+                 </ul>
+
+                 <p id="moreSS">choose thumb..</p>
+                 
+             </div>
+             <div class="screenshots2">
+
+                 <ul>
+                     <li><a href="./images/settings.png" rel="lytebox[vacation]" title="settings">
+                     <img src="./images/settings_thumb.png" alt="road" width="140" height="200"/></a></li>
+                     <li><a href="./images/dessert2.png" rel="lytebox[vacation]" title="dessert map">
+                     <img src="./images/dessert2_thumb.png" alt="cars" width="140" height="200"/></a></li>
+                     <li><a href="./images/down2Big.png" rel="lytebox[vacation]" title="more downtown">
+                     <img src="./images/down2.png" alt="road" width="140" height="200"/></a></li>
+                     <li><a href="./images/iceroad.png" rel="lytebox[vacation]" title="ice">
+                     <img src="./images/iceroad_thumb.png" alt="road" width="140" height="200"/></a></li>
+                     <li><a href="./images/rank.png" rel="lytebox[vacation]" title="/rank">
+                     <img src="./images/rank_thumb.png" alt="road" width="140" height="200"/></a></li>
                  </ul>
 
              </div>
-
+             
+             <div id="bottom_info">
              <p>
                 The game is played only with the gyro of your smarthphone and demands good responsiveness and concentration from the player.
                 All you have to do is to let your car gas and tilt the phone to avoid or pick up what you like.
@@ -100,6 +126,7 @@ include 'inc/head.php';
                  <li>Score sharing</li>
              </ul>
             </div>
+            </div>
         </div>
         <div class="clear"></div>
               <div class="share">
@@ -107,7 +134,7 @@ include 'inc/head.php';
     <!--<p>follow on twitter or join us facebook.</p>-->
                 <li><a href="http://twitter.com/#!/ettjavlabilspel"><img class="twitter" src="./images/twitter_in.png" alt="twitter" /></a></li>
                 <li><a href="http://www.facebook.com/pages/Ett-j%C3%A4vla-bilspel/210757385658796"><img class="twitter" src="./images/facebook_in.png" alt="twitter" /></a></li>
-                <li><a href="http://www.youtube.com/watch?v=SytbW-7_u9E"><img class="twitter" src="./images/youtube_in.png" alt="twitter" /></a></li>
+                <li><a href="http://www.youtube.com/watch?v=nuwGo6ZGVv0&feature=youtu.be"><img class="twitter" src="./images/youtube_in.png" alt="twitter" /></a></li>
             </ul>
         </div>
         <p id="shar">ettjävlabilspel - 2011</p>
